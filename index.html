@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Library Management System</title>
+</head>
+<body>
+    <header>
+        <h1>Library Management System</h1>
+    </header>
+
+    <div class="container">
+        <section id="books-section">
+            <h2>Available Books</h2>
+            <div id="book-list" class="book-list"></div>
+        </section>
+
+        <section id="user-section">
+            <h2>User Account</h2>
+            <div id="user-account" class="user-account">
+                <p><strong>User ID:</strong> <span id="user-id"></span></p>
+                <p><strong>Reserved Books:</strong> <span id="reserved-books"></span></p>
+            </div>
+        </section>
+
+        <section id="admin-section">
+            <h2>Admin Panel</h2>
+            <button class="btn btn-primary" onclick="showAddBookForm()">Add Book</button>
+            <button class="btn btn-info" onclick="showUpdateBookForm()">Update Book</button>
+            <button class="btn btn-danger" onclick="removeBook()">Remove Book</button>
+        </section>
+
+        <section id="forms-section">
+            <div id="add-book-form" class="hidden">
+                <!-- Add book form goes here -->
+            </div>
+            <div id="update-book-form" class="hidden">
+                <!-- Update book form goes here -->
+            </div>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
